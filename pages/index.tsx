@@ -1,16 +1,23 @@
 import Head from 'next/head'
 
-export default function Home() {
+export async function getServerSideProps() {
+  console.log('Server side rendering')
+
+  // Pass data to the page via props
+  return { props: { title: 'Servicios Cerca Mio' } }
+}
+
+export default function Home(props) {
   return (
     <div className="container">
       <Head>
-        <title>Servicios Cerca Mio</title>
+        <title>{props.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        {props.title}
         </h1>
 
         <p className="description">
