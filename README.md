@@ -19,3 +19,10 @@ To start run the following command.
 This starts your Next.js app’s "development server" on port 3000.
 
 Let’s check to see if it’s working. Open http://localhost:3000 from your browser.
+
+## Tests
+
+The task runner is jest and the test library is "react-testing-library".
+To execute the tests run the following command:
+
+`npm run test`
