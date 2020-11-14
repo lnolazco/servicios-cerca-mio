@@ -27,7 +27,7 @@ const Home: React.FunctionComponent<Props> = (props) => (
               </Grid>
             </div>
           </Grid>
-          <Results />
+          <Results employees={props.employees} />
         </Grid>
       </main>
     </div>
